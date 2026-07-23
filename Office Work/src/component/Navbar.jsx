@@ -237,8 +237,8 @@ const Navbar = () => {
                 {/* 2. open-mobile ki jagah ab show-dropdown use kiya hai */}
                 <ul className={`dropdown-menu-custom ${activeDropdown === 'courses' ? 'show-dropdown' : ''}`}>
                   <li><Link to="/courses/technology" className="dropdown-link" onClick={closeMenu}>Technology</Link></li>
-                  <li><Link to="/courses/management" className="dropdown-link" onClick={closeMenu}>Management</Link></li>
-                  <li><Link to="/courses/design" className="dropdown-link" onClick={closeMenu}>Design</Link></li>
+                  {/* <li><Link to="/courses/management" className="dropdown-link" onClick={closeMenu}>Management</Link></li>
+                  <li><Link to="/courses/design" className="dropdown-link" onClick={closeMenu}>Design</Link></li> */}
                 </ul>
               </li>
 

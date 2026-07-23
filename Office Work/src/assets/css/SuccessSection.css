@@ -836,7 +836,7 @@
 /* 2. Sirf badi screens (1920px+) ke liye auto-stretch */
 @media (min-width: 1600px) {
     .success-container {
-        max-width: 1850px !important;
+        /* max-width: 1850px !important; */
         padding: 0 3%;
     }
 }

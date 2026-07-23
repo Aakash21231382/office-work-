@@ -4,6 +4,7 @@ import RootLayout from "./Layout/RootLayout";
 import Dashbord from "./component/Dashbord";
 import Signup from "./pages/SignUp";
 import Login from "./pages/Login";
+import Technology from "./component/Technology";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
           <Route index element={<Dashbord />} />
           <Route path="/signup" element={<Signup/>}/>
           <Route path="/login" element={<Login/>}/>
+          <Route path="/courses/technology" element={<Technology/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
