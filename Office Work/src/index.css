@@ -1,0 +1,35 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+    
+body{
+    font-family: "Inter", sans-serif;
+}
+
+
+
+    .slider-dots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-top: 40px;
+    }
+    
+    .dot{
+        width: 8px;
+        height: 8px;
+        background: #D9D9D9;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+    
+    .dot.active{
+        width: 25px;
+        height: 8px;
+        background: #F07500;
+        border-radius: 20px;
+    }

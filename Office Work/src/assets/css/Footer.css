@@ -1,0 +1,769 @@
+/* 
+
+.footer-section {
+  background-color: #121824;
+  color: #a0aec0;
+  padding: 60px 0 0 0;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.footer-main-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-bottom: 50px;
+}
+
+.footer-brand-col {
+  flex: 0 0 280px;
+}
+
+.footer-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.footer-logo {
+  width: 55px;
+  height: auto;
+}
+
+.footer-logo-text h1 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 2px 0;
+  letter-spacing: 0.5px;
+}
+
+.footer-logo-text span {
+  color: #8c9bae;
+  font-size: 11px;
+}
+
+
+.footer-social-icons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background-color: #242d3d;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.social-icon.facebook:hover {
+  background-color: #1877f2;
+  transform: translateY(-2px);
+}
+
+.social-icon.twitter:hover {
+  background-color: #000000;
+  transform: translateY(-2px);
+}
+
+.social-icon.linkedin:hover {
+  background-color: #0a66c2;
+  transform: translateY(-2px);
+}
+
+.social-icon.youtube:hover {
+  background-color: #ff0000;
+  transform: translateY(-2px);
+}
+
+.social-icon.instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #df3484 45%, #7624cb 90%);
+  transform: translateY(-2px);
+}
+
+
+.app-title {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.app-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.app-badge {
+  width: 140px;
+  height: 45px;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.app-badge:hover {
+  opacity: 0.85;
+}
+
+.footer-courses-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+.footer-links-col {
+  flex: 1;
+  min-width: 160px;
+}
+
+.footer-heading {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links-list li {
+  margin-bottom: 10px;
+}
+
+.footer-links-list li a {
+  color: #8c9bae;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.footer-links-list li a:hover {
+  color: #ffffff;
+}
+
+
+.footer-bottom-wrapper {
+  background-color: #151C28;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+
+.footer-full-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.08);
+  margin-bottom: 30px;
+}
+
+
+.footer-bottom-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bottom-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-bottom-nav li a {
+  color: #8c9bae;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.footer-bottom-nav li a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom-nav .separator {
+  color: #4a5568;
+  font-size: 12px;
+}
+
+@media (max-width:992px){
+
+  .footer-section{
+    padding:50px 0 0;
+  }
+
+  .footer-container{
+    padding:0 25px;
+  }
+
+  .footer-main-content{
+    flex-direction:column;
+    gap:40px;
+    padding-bottom:40px;
+  }
+
+  .footer-brand-col{
+    flex:unset;
+    width:100%;
+    text-align:center;
+  }
+
+  .footer-logo-wrapper{
+    justify-content:center;
+  }
+
+  .footer-social-icons{
+    justify-content:center;
+  }
+
+  .app-links{
+    align-items:center;
+  }
+
+  .footer-courses-wrapper{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+  }
+
+  .footer-links-col{
+    min-width:unset;
+  }
+
+  .footer-links-list li{
+    margin-bottom:12px;
+  }
+
+  .footer-bottom-wrapper{
+    padding-bottom:25px;
+  }
+
+}
+
+
+@media (max-width:768px){
+
+  .footer-container{
+    padding:0 18px;
+  }
+
+  .footer-main-content{
+    gap:35px;
+    padding-bottom:35px;
+  }
+
+  .footer-brand-col{
+    text-align:left;
+  }
+
+  .footer-logo-wrapper{
+    justify-content:flex-start;
+  }
+
+  .footer-social-icons{
+    justify-content:flex-start;
+    flex-wrap:wrap;
+  }
+
+  .app-links{
+    align-items:flex-start;
+  }
+
+  .footer-courses-wrapper{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .footer-links-col{
+    border-bottom:1px solid rgba(255,255,255,.08);
+    padding-bottom:20px;
+  }
+
+  .footer-heading{
+    margin-bottom:15px;
+    font-size:17px;
+  }
+
+  .footer-links-list li{
+    margin-bottom:10px;
+  }
+
+  .footer-links-list li a{
+    font-size:15px;
+  }
+
+  .footer-bottom-row{
+    justify-content:flex-start;
+  }
+
+  .footer-bottom-nav{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+  }
+
+  .footer-bottom-nav .separator{
+    display:none;
+  }
+
+}
+
+
+@media (max-width:480px){
+
+  .footer-section{
+    padding:40px 50px;
+  }
+
+  .footer-container{
+    padding:0 15px;
+  }
+
+  .footer-logo{
+    width:46px;
+  }
+
+  .footer-logo-text h1{
+    font-size:15px;
+  }
+
+  .footer-logo-text span{
+    font-size:10px;
+  }
+
+  .social-icon{
+    width:32px;
+    height:32px;
+    font-size:13px;
+  }
+
+  .app-title{
+    font-size:14px;
+  }
+
+  .app-badge{
+    width:130px;
+  }
+
+  .footer-heading{
+    font-size:16px;
+  }
+
+  .footer-links-list li a{
+    font-size:14px;
+  }
+
+  .footer-bottom-nav li a{
+    font-size:12px;
+  }
+
+} */
+
+
+
+
+/* Footer.css */
+
+.footer-section {
+  background-color: #121824;
+  color: #a0aec0;
+  padding: 60px 0 0 0;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 1. Normal laptops ke liye pehle jaisa container (1400px limit) */
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+}
+
+/* 2. Sirf badi screens (1920px+) ke liye auto-stretch */
+@media (min-width: 1600px) {
+  .footer-container {
+    max-width: 1850px !important;
+    padding: 0 3%;
+  }
+}
+
+/* Main Content Layout (Splitting Part 1 and Part 2) */
+.footer-main-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-bottom: 50px;
+}
+
+/* Part 1: Brand & App Column */
+.footer-brand-col {
+  flex: 0 0 280px;
+}
+
+.footer-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.footer-logo {
+  width: 55px;
+  height: auto;
+}
+
+.footer-logo-text h1 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 2px 0;
+  letter-spacing: 0.5px;
+}
+
+.footer-logo-text span {
+  color: #8c9bae;
+  font-size: 11px;
+}
+
+/* Social Icons */
+.footer-social-icons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background-color: #242d3d;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Brand Hover Colors for Social Icons */
+.social-icon.facebook:hover {
+  background-color: #1877f2;
+  transform: translateY(-2px);
+}
+
+.social-icon.twitter:hover {
+  background-color: #000000;
+  transform: translateY(-2px);
+}
+
+.social-icon.linkedin:hover {
+  background-color: #0a66c2;
+  transform: translateY(-2px);
+}
+
+.social-icon.youtube:hover {
+  background-color: #ff0000;
+  transform: translateY(-2px);
+}
+
+.social-icon.instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #df3484 45%, #7624cb 90%);
+  transform: translateY(-2px);
+}
+
+/* App Section */
+.app-title {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.app-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.app-badge {
+  width: 140px;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.app-badge:hover {
+  opacity: 0.85;
+}
+
+/* Part 2: Courses Wrapper */
+.footer-courses-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Links Columns */
+.footer-links-col {
+  flex: 1;
+  min-width: 160px;
+}
+
+.footer-heading {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links-list li {
+  margin-bottom: 10px;
+}
+
+.footer-links-list li a {
+  color: #8c9bae;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.footer-links-list li a:hover {
+  color: #ffffff;
+}
+
+/* Bottom Wrapper containing divider and bottom links with custom background */
+.footer-bottom-wrapper {
+  background-color: #151C28;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+/* Full-Width Divider Line */
+.footer-full-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.08);
+  margin-bottom: 30px;
+}
+
+/* Bottom Navigation Row */
+.footer-bottom-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bottom-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-bottom-nav li a {
+  color: #8c9bae;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.footer-bottom-nav li a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom-nav .separator {
+  color: #4a5568;
+  font-size: 12px;
+}
+
+/* ===========================================
+   TABLET (992px and below)
+=========================================== */
+
+@media (max-width:992px){
+  .footer-section{
+    padding:50px 0 0;
+  }
+  .footer-container{
+    padding:0 25px;
+  }
+  .footer-main-content{
+    flex-direction:column;
+    gap:40px;
+    padding-bottom:40px;
+  }
+  .footer-brand-col{
+    flex:unset;
+    width:100%;
+    text-align:center;
+  }
+  .footer-logo-wrapper{
+    justify-content:center;
+  }
+  .footer-social-icons{
+    justify-content:center;
+  }
+  .app-links{
+    align-items:center;
+  }
+  .footer-courses-wrapper{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+  }
+  .footer-links-col{
+    min-width:unset;
+  }
+  .footer-links-list li{
+    margin-bottom:12px;
+  }
+  .footer-bottom-wrapper{
+    padding-bottom:25px;
+  }
+}
+
+
+/* ===========================================
+   MOBILE (768px and below)
+=========================================== */
+
+@media (max-width:768px){
+  .footer-container{
+    padding:0 18px;
+  }
+  .footer-main-content{
+    gap:35px;
+    padding-bottom:35px;
+  }
+  .footer-brand-col{
+    text-align:left;
+  }
+  .footer-logo-wrapper{
+    justify-content:flex-start;
+  }
+  .footer-social-icons{
+    justify-content:flex-start;
+    flex-wrap:wrap;
+  }
+  .app-links{
+    align-items:flex-start;
+  }
+  .footer-courses-wrapper{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+  .footer-links-col{
+    border-bottom:1px solid rgba(255,255,255,.08);
+    padding-bottom:20px;
+  }
+  .footer-heading{
+    margin-bottom:15px;
+    font-size:17px;
+  }
+  .footer-links-list li{
+    margin-bottom:10px;
+  }
+  .footer-links-list li a{
+    font-size:15px;
+  }
+  .footer-bottom-row{
+    justify-content:flex-start;
+  }
+  .footer-bottom-nav{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+  }
+  .footer-bottom-nav .separator{
+    display:none;
+  }
+}
+
+
+/* ===========================================
+   SMALL MOBILE (480px and below)
+=========================================== */
+
+@media (max-width:480px){
+  .footer-section{
+    /* Yahan maine pehle wala 40px 50px theek karke auto space kiya hai taaki chote phone me na kate */
+    padding:40px 0 0 0; 
+  }
+  .footer-container{
+    padding:0 15px;
+  }
+  .footer-logo{
+    width:46px;
+  }
+  .footer-logo-text h1{
+    font-size:15px;
+  }
+  .footer-logo-text span{
+    font-size:10px;
+  }
+  .social-icon{
+    width:32px;
+    height:32px;
+    font-size:13px;
+  }
+  .app-title{
+    font-size:14px;
+  }
+  .app-badge{
+    width:130px;
+  }
+  .footer-heading{
+    font-size:16px;
+  }
+  .footer-links-list li a{
+    font-size:14px;
+  }
+  .footer-bottom-nav li a{
+    font-size:12px;
+  }
+}

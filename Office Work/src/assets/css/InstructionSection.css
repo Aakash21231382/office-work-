@@ -1,0 +1,685 @@
+/* 
+
+.instruction-section {
+  width: 100%;
+  padding: 90px 0;
+  background: #fff;
+}
+
+.instruction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.instruction-tag {
+  display: inline-block;
+  background: #389444;
+  color: #fff;
+  font-size: 16px;
+  height: 40px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  margin-bottom: 18px;
+}
+
+.instruction-header h2 {
+  font-size: 48px;
+  font-weight: 700;
+  
+  color: #111;
+  
+  letter-spacing: -1.2px;
+}
+
+.instruction-header h2 span {
+  color: #F07500;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+}
+
+.view-course {
+  display: flex;
+  padding-top: 60px;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: #191C1D;
+  opacity: 0.6;
+  font-size: 16px;
+  font-weight: 700;
+  font: bold;
+}
+
+.view-course:hover {
+  color: #F07500;
+}
+
+
+.instruction-wrapper {
+  position: relative;
+}
+
+.instruction-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+}
+
+
+.instruction-card {
+  border-radius: 14px;
+  padding: 28px 0px;
+  border: 1px solid #EAEAEA;
+  text-align: center;
+
+  height: auto;
+  transition: .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-lines{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+    opacity: .45;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.teacher-image,
+.instruction-card h3,
+.instruction-card h4,
+.working,
+.teacher-desc,
+.instruction-card h5,
+.social-icons{
+    position: relative;
+    z-index: 2;
+}
+
+.instruction-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.instruction-card.blue {
+  background: linear-gradient(180deg,#EEF2FF 0%,#FDFDFD 100%);
+}
+
+.instruction-card.cyan {
+  background: linear-gradient(180deg,#EAF9FF 0%,#FDFDFD 100%);
+}
+
+.instruction-card.green {
+  background: linear-gradient(180deg,#ECFFF0 0%,#FDFDFD 100%);
+}
+
+
+
+.teacher-image {
+  width: 133px;
+  height: 133px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 2px solid white;
+}
+
+
+
+.instruction-card h3 {
+  font-size: 20px;
+  font: bold;
+  font-weight: 700;
+  color: #191C1D;
+  margin-bottom: 8px;
+}
+
+.instruction-card h4 {
+  font-size: 16px;
+  color: #191C1D;
+  margin-bottom: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.card-desc{
+    padding: 0 28px;
+}
+
+.working{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:8px;
+
+    
+    padding:0;
+
+    font-size:14px;
+    font-weight:400;
+    color:#191C1D;
+}
+.working img{
+    width:64px;
+    height:auto;
+    margin:0;
+}
+
+.teacher-desc{
+    font-size:14px;
+    line-height:34px;
+    color:#191C1D;
+    opacity: 0.7;
+    text-align:left;
+  
+}
+.social{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:5px;
+}
+.instruction-card h5{
+    margin:0;
+    font-size:15px;
+    font-weight:700;
+    white-space:nowrap;
+}
+
+
+
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+  }
+  
+  .social-icons span{
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  
+
+  .social-icons span svg{
+    color: inherit;
+    font-size:13px;
+  }
+
+  .social-icons .facebook{
+    background:#1877F2;
+    color:#fff;
+  }
+  
+
+  .social-icons .twitter{
+    background:#000;
+    color:#fff;
+  }
+  
+
+  .social-icons .linkedin{
+    background:#0A66C2;
+    color:#fff;
+  }
+
+  .social-icons .youtube{
+    background:#FF0000;
+    color:#fff;
+  }
+
+
+
+
+.instruction-arrow {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instruction-arrow.left {
+  left: -70px;
+  background: #E5E7EB;
+  color: #666;
+}
+
+.instruction-arrow.right {
+  right: -70px;
+  background: #0E223A;
+  color: #fff;
+}
+
+
+
+.instruction-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 35px;
+}
+
+.instruction-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #F4C9AE;
+}
+
+.instruction-dots .active {
+  width: 22px;
+  border-radius: 20px;
+  background: #F07500;
+}
+
+
+
+@media(max-width:992px){
+
+.instruction-header{
+  flex-direction:column;
+  align-items:flex-start;
+  gap:20px;
+}
+
+.instruction-header h2{
+  font-size:38px;
+}
+
+.instruction-grid{
+  grid-template-columns:1fr 1fr;
+}
+
+.instruction-arrow{
+  display:none;
+}
+
+}
+
+@media(max-width:768px){
+
+.instruction-grid{
+  grid-template-columns:1fr;
+}
+
+.instruction-header h2{
+  font-size:30px;
+}
+
+.teacher-image{
+  width:85px;
+  height:85px;
+}
+
+} */
+
+
+
+
+
+/* ==========================================
+   INSTRUCTION SECTION
+========================================== */
+
+.instruction-section {
+  width: 100%;
+  padding: 90px 0;
+  background: #fff;
+  overflow: hidden; /* Arrows ko screen ke bahar scroll hone se rokne ke liye */
+}
+
+/* 1. Normal laptops ke liye default */
+.instruction-container {
+  position: relative;
+}
+
+/* 2. Badi screens (1920px+) ke liye auto-stretch */
+@media (min-width: 1600px) {
+  .instruction-container {
+    max-width: 1850px !important;
+    padding: 0 3%;
+  }
+}
+
+.instruction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.instruction-tag {
+  display: inline-block;
+  background: #389444;
+  color: #fff;
+  font-size: 16px;
+  height: 40px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  margin-bottom: 18px;
+}
+
+.instruction-header h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: -1.2px;
+}
+
+.instruction-header h2 span {
+  color: #F07500;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+}
+
+.view-course {
+  display: flex;
+  padding-top: 60px;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: #191C1D;
+  opacity: 0.6;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.view-course:hover {
+  color: #F07500;
+}
+
+/* ==========================================
+   WRAPPER
+========================================== */
+
+.instruction-wrapper {
+  position: relative;
+}
+
+.instruction-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+}
+
+.instruction-card {
+  border-radius: 14px;
+  padding: 28px 0px;
+  border: 1px solid #EAEAEA;
+  text-align: center;
+  height: auto;
+  transition: .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-lines{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: .45;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.teacher-image,
+.instruction-card h3,
+.instruction-card h4,
+.working,
+.teacher-desc,
+.instruction-card h5,
+.social-icons{
+    position: relative;
+    z-index: 2;
+}
+
+.instruction-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.instruction-card.blue {
+  background: linear-gradient(180deg,#EEF2FF 0%,#FDFDFD 100%);
+}
+
+.instruction-card.cyan {
+  background: linear-gradient(180deg,#EAF9FF 0%,#FDFDFD 100%);
+}
+
+.instruction-card.green {
+  background: linear-gradient(180deg,#ECFFF0 0%,#FDFDFD 100%);
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.teacher-image {
+  width: 133px;
+  height: 133px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 2px solid white;
+}
+
+/* ==========================================
+   TEXT
+========================================== */
+
+.instruction-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #191C1D;
+  margin-bottom: 8px;
+}
+
+.instruction-card h4 {
+  font-size: 16px;
+  color: #191C1D;
+  margin-bottom: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.card-desc{
+    padding: 0 28px;
+}
+
+.working{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:8px;
+    padding:0;
+    font-size:14px;
+    font-weight:400;
+    color:#191C1D;
+}
+.working img{
+    width:64px;
+    height:auto;
+    margin:0;
+}
+
+.teacher-desc{
+    font-size:14px;
+    line-height:34px;
+    color:#191C1D;
+    opacity: 0.7;
+    text-align:left;
+}
+.social{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:5px;
+}
+.instruction-card h5{
+    margin:0;
+    font-size:15px;
+    font-weight:700;
+    white-space:nowrap;
+}
+/* ==========================================
+   SOCIAL ICONS
+========================================== */
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+  }
+  
+  .social-icons span{
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .social-icons span svg{
+    color: inherit;
+    font-size:13px;
+  }
+  
+  /* Facebook */
+  .social-icons .facebook{
+    background:#1877F2;
+    color:#fff;
+  }
+  
+  /* Twitter/X */
+  .social-icons .twitter{
+    background:#000;
+    color:#fff;
+  }
+  
+  /* LinkedIn */
+  .social-icons .linkedin{
+    background:#0A66C2;
+    color:#fff;
+  }
+  
+  /* YouTube */
+  .social-icons .youtube{
+    background:#FF0000;
+    color:#fff;
+  }
+
+/* ==========================================
+   ARROWS
+========================================== */
+
+.instruction-arrow {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Arrows ki position -70px se -30px kar di taaki badi screen par na katein */
+.instruction-arrow.left {
+  left: -30px; 
+  background: #E5E7EB;
+  color: #666;
+}
+
+.instruction-arrow.right {
+  right: -30px; 
+  background: #0E223A;
+  color: #fff;
+}
+
+/* ==========================================
+   DOTS
+========================================== */
+
+.instruction-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 35px;
+}
+
+.instruction-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #F4C9AE;
+}
+
+.instruction-dots .active {
+  width: 22px;
+  border-radius: 20px;
+  background: #F07500;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+  .instruction-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+  }
+  .instruction-header h2{
+    font-size:38px;
+  }
+  .instruction-grid{
+    grid-template-columns:1fr 1fr;
+  }
+  .instruction-arrow{
+    display:none;
+  }
+}
+
+@media(max-width:768px){
+  .instruction-grid{
+    grid-template-columns:1fr;
+  }
+  .instruction-header h2{
+    font-size:30px;
+  }
+  .teacher-image{
+    width:85px;
+    height:85px;
+  }
+}

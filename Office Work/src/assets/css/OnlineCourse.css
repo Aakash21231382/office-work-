@@ -1,0 +1,714 @@
+/* 
+.online-course-section {
+  width: 100%;
+  padding: 80px 0 60px;
+  background: #fff;
+}
+
+
+.online-course-heading {
+  margin-bottom: 28px;
+}
+
+.online-course-heading h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #191C1D;
+  line-height: 56px;
+  letter-spacing: -1.2px;
+}
+
+.online-course-heading h2 span {
+  color: #FF6E06;
+  font-size: 48px;
+  font-weight: 700;
+
+}
+
+.course-category {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 14px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.course-category::-webkit-scrollbar { display: none; }
+
+.course-category button {
+  border: none;
+  background: transparent;
+  color: gray;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.2s;
+  position: relative;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+
+.course-category .active-category {
+  color: #191C1D;
+  font: bold;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.course-category .active-category::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 100%;
+  height: 3px;
+  background: #FF6E06;
+  border-radius: 50px;
+}
+
+.course-feature-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.oc-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #191C1D;
+  opacity: 0.6;
+  font-size:16px;
+  font-weight: 500;
+}
+
+.oc-check-icon {
+  color: #FF7A00;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.oc-view-all {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #111;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.oc-view-all:hover { color: #FF7A00; }
+
+.oc-card-wrapper {
+  position: relative;
+}
+
+.oc-slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.oc-left-btn {
+  left: -28px;
+  background: #fff;
+  color: #666;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e8e8e8;
+}
+
+.oc-left-btn:hover {
+  background: #f5f5f5;
+}
+
+.oc-right-btn {
+  right: -28px;
+  background: #1a1a1a;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.oc-right-btn:hover {
+  background: #FF7A00;
+}
+
+
+.oc-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #efefef;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.oc-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+.oc-card-image {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.oc-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.oc-card:hover .oc-card-image img {
+  transform: scale(1.05);
+}
+
+
+.oc-card-content {
+
+  padding-top: 22px;
+padding-right: 22px;
+padding-bottom: 22px;
+padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.oc-card-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+
+.oc-subtitle {
+  color: #888;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+
+.oc-features-list {
+  list-style: disc;
+  padding-left: 18px;
+  margin: 0 0 18px;
+}
+
+.oc-features-list li {
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+
+.oc-skills-row {
+
+  display: flex;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.oc-skills-label {
+  display: block;
+  font-size: 16px;
+  color: #191C1D;
+  opacity: 0.8;
+  font-weight: 400;
+  line-height: 28px;
+
+  margin-top: 12px;
+  
+}
+
+.oc-skill-icons {
+ 
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.oc-skill-icons img {
+  width: 100px;
+  height: 48px;
+  object-fit: contain;
+  background: #fff;
+  padding: 3px;
+}
+
+.oc-more-skill {
+  font-size: 16px;
+  color: #191C1D;
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+
+.oc-card-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+  min-height: 45px;
+}
+
+.oc-btn-view {
+  flex: 1;
+  text-align: center;
+  padding: 12px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+ 
+  font-weight: 600;
+  border: 1.5px solid #F07500;
+  color: #F07500;
+  background: #fff;
+  transition: background 0.2s;
+}
+
+.oc-btn-view:hover {
+  background: #fff5eb;
+  color: #F07500;
+}
+
+.oc-btn-brochure {
+  flex: 1;
+  text-align: center;
+  padding: 12px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  background: #F07500;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background 0.2s;
+}
+
+.oc-btn-brochure:hover {
+  background: #d96400;
+  color: #fff;
+}
+
+
+@media (max-width: 992px) {
+  .online-course-heading h2 { font-size: 32px; }
+  .oc-slider-btn { display: none; }
+  .course-feature-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .oc-view-all { margin-left: 0; }
+}
+
+@media (max-width: 768px) {
+  .online-course-section { padding: 60px 0; }
+  .online-course-heading h2 { font-size: 26px; }
+  .oc-card-buttons { flex-direction: column; }
+} */
+
+
+
+
+
+/* ══════════════════════════════════════════════════
+   ONLINE COURSE SECTION
+══════════════════════════════════════════════════ */
+
+.online-course-section {
+  width: 100%;
+  padding: 80px 0 60px;
+  background: #fff;
+  overflow: hidden; /* Arrows ko bahar nikalne se rokne ke liye */
+}
+
+/* 1. Normal laptops ke liye default container behavior */
+.oc-container {
+  position: relative;
+}
+
+/* 2. Sirf badi screens (1920px+) ke liye auto-stretch */
+@media (min-width: 1600px) {
+  .oc-container {
+    max-width: 1850px !important;
+    padding: 0 3%;
+  }
+}
+
+/* ── Heading ── */
+.online-course-heading {
+  margin-bottom: 28px;
+}
+
+.online-course-heading h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #191C1D;
+  line-height: 56px;
+  letter-spacing: -1.2px;
+}
+
+.online-course-heading h2 span {
+  color: #FF6E06;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+/* ══════════════════════════════════════════════════
+   CATEGORY TABS
+══════════════════════════════════════════════════ */
+.course-category {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 14px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.course-category::-webkit-scrollbar { display: none; }
+
+.course-category button {
+  border: none;
+  background: transparent;
+  color: gray;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.2s;
+  position: relative;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.course-category .active-category {
+  color: #191C1D;
+  font: bold;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.course-category .active-category::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 100%;
+  height: 3px;
+  background: #FF6E06;
+  border-radius: 50px;
+}
+
+/* ══════════════════════════════════════════════════
+   FEATURE ROW
+══════════════════════════════════════════════════ */
+.course-feature-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.oc-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #191C1D;
+  opacity: 0.6;
+  font-size:16px;
+  font-weight: 500;
+}
+
+.oc-check-icon {
+  color: #FF7A00;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.oc-view-all {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #111;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.oc-view-all:hover { color: #FF7A00; }
+
+/* ══════════════════════════════════════════════════
+   CARD WRAPPER + ARROWS
+══════════════════════════════════════════════════ */
+.oc-card-wrapper {
+  position: relative;
+}
+
+.oc-slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.oc-left-btn {
+  left: -28px;
+  background: #fff;
+  color: #666;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e8e8e8;
+}
+
+.oc-left-btn:hover {
+  background: #f5f5f5;
+}
+
+.oc-right-btn {
+  right: -28px;
+  background: #1a1a1a;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.oc-right-btn:hover {
+  background: #FF7A00;
+}
+
+/* ══════════════════════════════════════════════════
+   CARD
+══════════════════════════════════════════════════ */
+.oc-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #efefef;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.oc-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* ── Card Image ── */
+.oc-card-image {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.oc-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.oc-card:hover .oc-card-image img {
+  transform: scale(1.05);
+}
+
+/* ── Card Content ── */
+.oc-card-content {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.oc-card-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+
+.oc-subtitle {
+  color: #888;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+/* ── Feature List ── */
+.oc-features-list {
+  list-style: disc;
+  padding-left: 18px;
+  margin: 0 0 18px;
+}
+
+.oc-features-list li {
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* ── Skills ── */
+.oc-skills-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.oc-skills-label {
+  display: block;
+  font-size: 16px;
+  color: #191C1D;
+  opacity: 0.8;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 12px;
+}
+
+.oc-skill-icons {
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.oc-skill-icons img {
+  width: 100px;
+  height: 48px;
+  object-fit: contain;
+  background: #fff;
+  padding: 3px;
+}
+
+.oc-more-skill {
+  font-size: 16px;
+  color: #191C1D;
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+/* ── Buttons ── */
+.oc-card-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+  min-height: 45px;
+}
+
+.oc-btn-view {
+  flex: 1;
+  text-align: center;
+  padding: 12px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1.5px solid #F07500;
+  color: #F07500;
+  background: #fff;
+  transition: background 0.2s;
+}
+
+.oc-btn-view:hover {
+  background: #fff5eb;
+  color: #F07500;
+}
+
+.oc-btn-brochure {
+  flex: 1;
+  text-align: center;
+  padding: 12px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  background: #F07500;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background 0.2s;
+}
+
+.oc-btn-brochure:hover {
+  background: #d96400;
+  color: #fff;
+}
+
+/* ══════════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════════ */
+@media (max-width: 992px) {
+  .online-course-heading h2 { font-size: 32px; }
+  .oc-slider-btn { display: none; }
+  .course-feature-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .oc-view-all { margin-left: 0; }
+}
+
+@media (max-width: 768px) {
+  .online-course-section { padding: 60px 0; }
+  .online-course-heading h2 { font-size: 26px; }
+  .oc-card-buttons { flex-direction: column; }
+}
